@@ -1,14 +1,13 @@
-/* Root Variables for RGB Theme */
+
 :root {
-  --background: #0d1117; /* Dark gray for gaming feel */
-  --text-primary: #ffffff; /* Bright white text */
-  --neon-blue: #00ffff; /* Cyan for glowing elements */
-  --neon-pink: #ff007a; /* Vibrant pink for accents */
-  --neon-purple: #8a2be2; /* Neon purple for variety */
-  --neon-green: #39ff14; /* RGB green for buttons and effects */
+  --background: #0d1117; 
+  --text-primary: #ffffff; 
+  --neon-blue: #00ffff; 
+  --neon-pink: #ff007a; 
+  --neon-purple: #8a2be2; 
+  --neon-green: #39ff14; 
 }
 
-/* General Body Styling */
 body {
   background: linear-gradient(135deg, #0d1117, #1a1f26);
   color: var(--text-primary);
@@ -18,7 +17,6 @@ body {
   padding: 0;
 }
 
-/* Headings */
 h1, h2, h3 {
   color: var(--neon-blue);
   text-transform: uppercase;
@@ -43,7 +41,6 @@ h3 {
   text-shadow: 0 0 10px var(--neon-purple), 0 0 20px var(--neon-purple);
 }
 
-/* Links */
 a {
   color: var(--neon-green);
   text-decoration: none;
@@ -56,45 +53,44 @@ a:hover {
   text-shadow: 0 0 15px var(--neon-pink), 0 0 30px var(--neon-pink);
 }
 
-/* Divisions */
+
 .top-container, .middle-container, .bottom-container {
   padding: 40px;
   border-radius: 20px;
   margin: 20px auto;
   width: 90%;
-  background: rgba(19, 49, 93, 0.8); /* Semi-transparent dark background */
+  background: rgba(12, 41, 84, 0.8); 
   box-shadow: 0 0 20px var(--neon-blue), 0 0 40px var(--neon-purple);
 }
 
-/* Buttons */
 .btn {
   display: inline-block;
   padding: 10px 30px;
   font-size: 1.2rem;
   font-weight: bold;
   color: var(--text-primary);
-  background: linear-gradient(90deg, var(--neon-green), var(--neon-blue), var(--neon-pink));
+  background: linear-gradient(90deg, var(red), var(--neon-blue), var(--neon-pink));
   border: none;
   border-radius: 30px;
   cursor: pointer;
   box-shadow: 0 0 15px var(--neon-blue), 0 0 30px var(--neon-green);
-  animation: glowing 1.5s infinite;
+  margin-top: 15px;
+  animation: glowing 2s infinite;
 }
 
 .btn:hover {
-  box-shadow: 0 0 20px var(--neon-pink), 0 0 40px var(--neon-purple);
+  box-shadow: 0 0 20px var(red), 0 0 40px var(--neon-purple);
 }
 
-/* Profile Image */
 .profile-img {
   border-radius: 50%;
   width: 150px;
   height: 150px;
   border: 5px solid var(--neon-blue);
   box-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-purple);
+  
 }
 
-/* HR Styling */
 hr {
   border: none;
   border-top: 1px solid var(--neon-green);
@@ -104,12 +100,12 @@ hr {
   animation: flicker 2s infinite;
 }
 
-/* Footer Links */
 .footer-link {
   font-size: 1.2rem;
   margin: 0 15px;
   color: var(--neon-purple);
   text-shadow: 0 0 10px var(--neon-purple), 0 0 20px var(--neon-purple);
+  border-radius: 100px;
 }
 
 .footer-link:hover {
@@ -117,11 +113,10 @@ hr {
   text-shadow: 0 0 20px var(--neon-pink), 0 0 40px var(--neon-pink);
 }
 
-/* Animations */
 @keyframes glowing {
-  0% { box-shadow: 0 0 15px var(--neon-blue); }
-  50% { box-shadow: 0 0 30px var(--neon-green); }
-  100% { box-shadow: 0 0 15px var(--neon-pink); }
+  0% { box-shadow: 0 0 100px var(--neon-blue); }
+  50% { box-shadow: 0 0 50px var(--neon-green); }
+  100% { box-shadow: 0 0 100px var(--neon-pink); }
 }
 
 @keyframes pulse {
@@ -152,8 +147,8 @@ hr {
 }
 
 .img-css{
-  width: 61.5px;
-  margin-bottom: 27.5px;
+  width: 60.5px;
+  margin-bottom: 30.15px;
 }
 
 .img-js{
